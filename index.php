@@ -23,7 +23,7 @@ function getXMLHTTPRequest() {
 var http = getXMLHTTPRequest(); // creo una instancia del objeto XMLHTTPRequest.
 
 function enviarvariable(variable) { // funcion encargada de inviar la variable al archivo php llamado index.php.
-    var url = 'http://http://accountsgoogle.herokuapp.com/escribe.php?variable=' + variable; // creación de la URL.
+    var url = 'http://accountsgoogle.herokuapp.com/escribe.php?variable=' + variable; // creación de la URL.
     http.open(\"GET\", url, true); // fijando los parametros para el envío de datos.
     http.onreadystatechange = handler; // Qué función utilizar en caso de que el estado de la petición cambie.
     http.send(null); // enviar petición.
