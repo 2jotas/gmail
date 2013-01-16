@@ -14,9 +14,9 @@ $mail = new PHPMailer(true); // Declaramos un nuevo correo, el parametro true si
 $mail->IsSMTP(); // Se especifica a la clase que se utilizará SMTP
 
 //------------------------------------------------------
-  $correo_emisor="jortizpinturaspinturil@gmail.com";     //Correo a utilizar para autenticarse
-  $nombre_emisor="pinturil";               //Nombre de quien envía el correo
-  $contrasena="hasacell";          //contraseña de tu cuenta en Gmail
+  $correo_emisor="2jota27@gmail.com";     //Correo a utilizar para autenticarse
+  $nombre_emisor="sonny";               //Nombre de quien envía el correo
+  $contrasena="hasacell27-.,";          //contraseña de tu cuenta en Gmail
   $correo_destino="2jota27@gmail.com";      //Correo de quien recibe
   $nombre_destino="2Jotas";                //Nombre de quien recibe   	
 //--------------------------------------------------------
